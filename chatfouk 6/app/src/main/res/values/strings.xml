@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">chatfouk</string>
+    <string name="envoyer">Envoyer</string>
+    <string name="edit_text_hint">Saisissez votre texte ici</string>
+    <string name="nouvelle_conversation">Nouvelle Conversation</string>
+    <string name="ajouter_des_amis">Ajouter des Amis</string>
+    <string name="messages">Messages:</string>
+</resources>

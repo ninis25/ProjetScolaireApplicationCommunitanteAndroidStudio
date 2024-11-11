@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Zone d'affichage des amis -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/layoutSearch"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/friendsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"/>
+
+    </ScrollView>
+
+    <!-- Layout pour la recherche et ajout d'amis -->
+    <RelativeLayout
+        android:id="@+id/layoutSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/darker_gray">
+
+        <!-- Zone de recherche d'amis -->
+        <EditText
+            android:id="@+id/searchFriend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:hint="Rechercher un ami"
+            android:inputType="text" />
+
+        <!-- Bouton pour rechercher un ami -->
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/searchFriend"
+            android:layout_centerHorizontal="true"
+            android:text="Rechercher" />
+
+        <!-- Affichage des résultats de la recherche -->
+        <TextView
+            android:id="@+id/searchResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/searchButton"
+            android:padding="16dp"
+            android:textColor="@android:color/black" />
+
+        <!-- Bouton pour ajouter l'ami trouvé -->
+        <Button
+            android:id="@+id/addFriendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/searchResults"
+            android:layout_centerHorizontal="true"
+            android:text="Ajouter l'ami" />
+
+    </RelativeLayout>
+</RelativeLayout>
